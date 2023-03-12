@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS blogtechdb;
+
+CREATE DATABASE blogtechdb;
