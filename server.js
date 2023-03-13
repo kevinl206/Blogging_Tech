@@ -16,7 +16,8 @@ app.set('view engine', 'handlebars');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-  
+ 
+// Set up sessions
 const sess = {
   secret: 'Super secret secret',
   cookie: {
@@ -28,7 +29,9 @@ const sess = {
     })
   }
   };
-  
+
+  app.use(session(sess));
+
 // Starts the server to begin listening
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
