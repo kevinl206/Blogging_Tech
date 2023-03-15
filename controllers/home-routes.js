@@ -29,9 +29,9 @@ router.get('/', async (req, res) => {
         },
       ],
     })
-      .then((dbPostData) => {
-        if (dbPostData) {
-          const post = dbPostData.get({ plain: true });
+      .then((postData) => {
+        if (postData) {
+          const post = postData.get({ plain: true });
   
           res.render("single-post", { post });
         } else {
