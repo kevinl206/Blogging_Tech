@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: grey;
+    font-size: 16px;
+}
+
+main {
+    width: 100%;
+    margin: 25px auto;
+}
+
+a, .btn-no-style, #comment-subtitle {
+    color: ghostwhite;
+}
+
+a:hover, btn
+
+
