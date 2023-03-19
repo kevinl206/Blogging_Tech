@@ -40,4 +40,4 @@ post_id: {
     modelName: 'comment'
 })
 
-module.exports = Comment;
+module.exports = Comment
